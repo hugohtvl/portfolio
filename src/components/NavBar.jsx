@@ -20,28 +20,28 @@ const NavBar = () => {
         <Link to="/">
           <img
             src={location.pathname === "/" ? homeBlue : homeBlack}
-            id="navbarProject"
+            className="navbarIcon"
           />
           <li>Accueil</li>
         </Link>
         <Link to="/">
           <img
             src={location.pathname === "/about" ? aboutBlue : aboutBlack}
-            id="navbarProject"
+            className="navbarIcon"
           />
           <li>À propos</li>
         </Link>
         <Link to="/">
           <img
             src={location.pathname === "/projects" ? projectBlue : projectBlack}
-            id="navbarProject"
+            className="navbarIcon"
           />
           <li>Projets</li>
         </Link>
         <Link to="/">
           <img
             src={location.pathname === "/contact" ? contactBlue : contactBlack}
-            id="navbarProject"
+            className="navbarIcon"
           />
           <li>Contact</li>
         </Link>

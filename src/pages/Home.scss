@@ -1,0 +1,21 @@
+#homeGlobal {
+  background-image: url("./assets/background.svg");
+  background-repeat: no-repeat;
+  //   height: calc(100vh - 6.74vh);
+  height: 100vh;
+  width: 100vw;
+
+  #deloreanTitle {
+    display: flex;
+    margin: 5% 0 0 0;
+    h1 {
+      font-family: $content-font;
+      font-size: 90px;
+    }
+
+    p {
+      font-family: $second-title;
+      font-size: 100px;
+    }
+  }
+}
