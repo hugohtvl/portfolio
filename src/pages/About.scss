@@ -15,35 +15,3 @@
     font-size: 20px;
   }
 }
-
-#aboutSectionCards {
-  padding: 50px 0 0 0;
-  display: flex;
-  justify-content: space-evenly;
-  img {
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    // width: 100%;
-  }
-  .aboutCards {
-    display: flex;
-    // align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 450px;
-    background: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    .aboutTitleImg {
-      text-align: center;
-      justify-content: center;
-    }
-    h2 {
-      padding: 10px 0 15px 0;
-      color: #62a1cc;
-      font-family: $content-font;
-      font-weight: 200;
-      //   width: 50%;
-    }
-  }
-}
