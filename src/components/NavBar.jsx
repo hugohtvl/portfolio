@@ -24,7 +24,7 @@ const NavBar = () => {
           />
           <li>Accueil</li>
         </Link>
-        <Link to="/">
+        <Link to="/about">
           <img
             src={location.pathname === "/about" ? aboutBlue : aboutBlack}
             className="navbarIcon"
