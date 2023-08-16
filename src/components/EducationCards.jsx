@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import Context from "./Context";
 import crossButton from "../assets/cross-button.png";
 import nbBackground1 from "../assets/number-background-1.png";
 import nbBackground2 from "../assets/number-background-2.png";

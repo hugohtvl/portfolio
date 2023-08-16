@@ -8,9 +8,10 @@ import About from "./pages/About";
 const App = () => {
   const [proExp, setProExp] = useState(false);
   const [education, setEducation] = useState(false);
+  const [skills, setSkills] = useState(false);
   const contextValues = useMemo(
-    () => ({ proExp, setProExp, education, setEducation }),
-    [proExp, setProExp, education, setEducation]
+    () => ({ proExp, setProExp, education, setEducation, skills, setSkills }),
+    [proExp, setProExp, education, setEducation, skills, setSkills]
   );
   return (
     <Context.Provider value={contextValues}>

@@ -2,7 +2,11 @@ import skills from "../assets/skills.png";
 import proExp from "../assets/pro-experience.png";
 import education from "../assets/education.png";
 
-const AboutCards = ({ handleClickProExp, handleClickEducation }) => {
+const AboutCards = ({
+  handleClickProExp,
+  handleClickEducation,
+  handleClickSkills,
+}) => {
   return (
     <>
       <section id="aboutSectionCards">
@@ -22,7 +26,7 @@ const AboutCards = ({ handleClickProExp, handleClickEducation }) => {
             />
           </div>
         </button>
-        <button className="aboutCards">
+        <button className="aboutCards" onClick={handleClickSkills}>
           <div className="aboutTitleImg">
             <h2>Compétences</h2>
             <img
