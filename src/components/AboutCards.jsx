@@ -2,17 +2,17 @@ import skills from "../assets/skills.png";
 import proExp from "../assets/pro-experience.png";
 import education from "../assets/education.png";
 
-const AboutCards = ({ handleClickPopup }) => {
+const AboutCards = ({ handleClickProExp, handleClickEducation }) => {
   return (
     <>
       <section id="aboutSectionCards">
-        <button className="aboutCards" onClick={handleClickPopup}>
+        <button className="aboutCards" onClick={handleClickProExp}>
           <div className="aboutTitleImg">
             <h2>Expériences professionnelles</h2>
             <img src={proExp} alt="Image d'un dessin de CV" id="aboutPicture" />
           </div>
         </button>
-        <button className="aboutCards">
+        <button className="aboutCards" onClick={handleClickEducation}>
           <div className="aboutTitleImg">
             <h2>Formations</h2>
             <img

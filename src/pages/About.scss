@@ -1,17 +1,21 @@
-#aboutPresentation {
-  display: flex;
-  align-items: center;
-  padding: 0 50px 0 0;
-}
+#aboutGlobal {
+  position: relative;
+  min-height: 100vh;
+  #aboutPresentation {
+    display: flex;
+    align-items: center;
+    padding: 0 50px 0 0;
+  }
 
-#aboutPicture {
-  width: 300px;
-}
+  #aboutPicture {
+    width: 300px;
+  }
 
-#aboutText {
-  //   transform: translateY(40%);
-  p {
-    font-family: $content-font;
-    font-size: 20px;
+  #aboutText {
+    //   transform: translateY(40%);
+    p {
+      font-family: $content-font;
+      font-size: 20px;
+    }
   }
 }
