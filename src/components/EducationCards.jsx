@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import Context from "../components/Context";
+import Context from "./Context";
 import crossButton from "../assets/cross-button.png";
 import nbBackground1 from "../assets/number-background-1.png";
 import nbBackground2 from "../assets/number-background-2.png";
@@ -9,17 +9,15 @@ import nbBackground5 from "../assets/number-background-5.png";
 import nbBackground6 from "../assets/number-background-6.png";
 import nbBackground7 from "../assets/number-background-7.png";
 
-const ProExperiencesCards = () => {
-  const { popup, setPopup } = useContext(Context);
-  const handleClickPopup = () => {
-    setPopup(!popup);
-  };
+const ProExperiencesCards = ({ handleClickEducation }) => {
+  const { proExp, setProExp } = useContext(Context);
+
   return (
-    <>
-      <main id="experienceCards">
+    <main id="experienceCardslGlobal">
+      <div id="experienceCards">
         <div id="titleCross">
-          <h1>Expériences professionnelles</h1>
-          <button id="carrouselCross" onClick={handleClickPopup}>
+          <h1>Expériences professionnelles de test</h1>
+          <button id="carrouselCross" onClick={handleClickEducation}>
             <img src={crossButton} />
           </button>
         </div>
@@ -165,8 +163,8 @@ const ProExperiencesCards = () => {
             </div>
           </div>
         </section>
-      </main>
-    </>
+      </div>
+    </main>
   );
 };
 

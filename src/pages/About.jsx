@@ -4,13 +4,19 @@ import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import mySelf from "../assets/me.png";
 import AboutCards from "../components/AboutCards";
-import Carrousel from "../components/Carrousel";
+import ExperiencesCards from "../components/ExperiencesCards";
+import EducationCards from "../components/EducationCards";
 
 const About = () => {
-  const { popup, setPopup } = useContext(Context);
-  const handleClickPopup = () => {
-    setPopup(!popup);
+  const { proExp, setProExp, education, setEducation } = useContext(Context);
+  const handleClickProExp = () => {
+    setProExp(!proExp);
   };
+  const handleClickEducation = () => {
+    setEducation(!education);
+  };
+
+  const test = () => {};
   return (
     <>
       <div id="aboutGlobal">
@@ -29,10 +35,15 @@ const About = () => {
             </p>
           </div>
         </section>
-        {!popup ? (
-          <AboutCards handleClickPopup={handleClickPopup} />
+        {proExp ? (
+          <ExperiencesCards handleClickProExp={handleClickProExp} />
+        ) : education ? (
+          <EducationCards handleClickEducation={handleClickEducation} />
         ) : (
-          <Carrousel handleClickPopup={handleClickPopup} />
+          <AboutCards
+            handleClickProExp={handleClickProExp}
+            handleClickEducation={handleClickEducation}
+          />
         )}
         <Footer />
       </div>

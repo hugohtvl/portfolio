@@ -5,7 +5,7 @@ import delorean from "../assets/delorean.png";
 const Home = () => {
   return (
     <>
-      <div id="homeGlobal">
+      <main id="homeGlobal">
         <NavBar />
         <div id="deloreanTitle">
           <img src={delorean} alt="DeLorean" />
@@ -15,7 +15,7 @@ const Home = () => {
           </div>
         </div>
         <Footer />
-      </div>
+      </main>
     </>
   );
 };

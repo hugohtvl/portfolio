@@ -6,8 +6,12 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 
 const App = () => {
-  const [popup, setPopup] = useState(false);
-  const contextValues = useMemo(() => ({ popup, setPopup }), [popup, setPopup]);
+  const [proExp, setProExp] = useState(false);
+  const [education, setEducation] = useState(false);
+  const contextValues = useMemo(
+    () => ({ proExp, setProExp, education, setEducation }),
+    [proExp, setProExp, education, setEducation]
+  );
   return (
     <Context.Provider value={contextValues}>
       <Router>
