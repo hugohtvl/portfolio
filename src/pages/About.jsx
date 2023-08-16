@@ -16,7 +16,6 @@ const About = () => {
     setEducation(!education);
   };
 
-  const test = () => {};
   return (
     <>
       <div id="aboutGlobal">

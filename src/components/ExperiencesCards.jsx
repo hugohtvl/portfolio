@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import Context from "./Context";
 import crossButton from "../assets/cross-button.png";
 import nbBackground1 from "../assets/number-background-1.png";
 import nbBackground2 from "../assets/number-background-2.png";
@@ -9,11 +7,7 @@ import nbBackground5 from "../assets/number-background-5.png";
 import nbBackground6 from "../assets/number-background-6.png";
 import nbBackground7 from "../assets/number-background-7.png";
 
-const ExperiencesCards = () => {
-  const { proExp, setProExp } = useContext(Context);
-  const handleClickProExp = () => {
-    setProExp(!proExp);
-  };
+const ExperiencesCards = ({ handleClickProExp }) => {
   return (
     <main id="experienceCardslGlobal">
       <div id="experienceCards">
