@@ -22,28 +22,52 @@ const NavBar = () => {
             src={location.pathname === "/" ? homeBlue : homeBlack}
             className="navbarIcon"
           />
-          <li>Accueil</li>
+          <li
+            style={{
+              color: location.pathname === "/" ? "#62A1CC" : "",
+            }}
+          >
+            Accueil
+          </li>
         </Link>
         <Link to="/about">
           <img
             src={location.pathname === "/about" ? aboutBlue : aboutBlack}
             className="navbarIcon"
           />
-          <li>À propos</li>
+          <li
+            style={{
+              color: location.pathname === "/about" ? "#62A1CC" : "",
+            }}
+          >
+            À propos
+          </li>
         </Link>
         <Link to="/projects">
           <img
             src={location.pathname === "/projects" ? projectBlue : projectBlack}
             className="navbarIcon"
           />
-          <li>Projets</li>
+          <li
+            style={{
+              color: location.pathname === "/projects" ? "#62A1CC" : "",
+            }}
+          >
+            Projets
+          </li>
         </Link>
-        <Link to="/">
+        <Link to="/contact">
           <img
             src={location.pathname === "/contact" ? contactBlue : contactBlack}
             className="navbarIcon"
           />
-          <li>Contact</li>
+          <li
+            style={{
+              color: location.pathname === "/contact" ? "#62A1CC" : "",
+            }}
+          >
+            Contact
+          </li>
         </Link>
       </ul>
     </div>
