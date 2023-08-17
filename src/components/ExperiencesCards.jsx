@@ -32,26 +32,29 @@ const ExperiencesCards = ({ handleClickProExp }) => {
               <br />
               <ul>
                 <li>
-                  Création d'une application web mobile first à l'aide de
-                  Vite.js, Node.js, Sass couplé à une API REST conçue à l'aide
-                  de Express lors d'un hackaton de 24h - 07/2023
+                  Création d'une application web mobile first à l'aide de{" "}
+                  <b>Vite.js</b>, <b>Node.js</b>, <b>Sass</b> couplé à une{" "}
+                  <b>API REST</b> conçue à l'aide de <b>Express.js</b> lors d'un
+                  hackaton de 24h - 07/2023
                 </li>
                 <br />
                 <li>
-                  Création d'une application web e-commerce à l'aide de Vite.js,
-                  Node.js, Sass couplé à une API REST conçue à l'aide de Express
-                  - 06/2023 - 07/2023
+                  Création d'une application web e-commerce à l'aide de{" "}
+                  <b>Vite.js</b>, <b>Node.js</b>, <b>Sass</b> couplé à une{" "}
+                  <b>API REST</b> conçue à l'aide de <b>Express.js</b> - 06/2023
+                  - 07/2023
                 </li>
                 <br />
                 <li>
                   Création d'un site internet sous forme d'application à l'aide
-                  de React.Js sur le thème de Star Wars in Love lors d'un
+                  de <b>React.Js</b> sur le thème de Star Wars in Love lors d'un
                   hackaton de 24h - 06/2023
                 </li>
                 <br />
                 <li>
                   Création d'un site internet sur l'univers de Deadpool, à
-                  l'aide de JavaScript, HTML5, CSS3 - 05/2023
+                  l'aide de <b>JavaScript</b>, <b>HTML5</b> & <b>CSS3</b> -
+                  05/2023
                 </li>
               </ul>
             </div>
