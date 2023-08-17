@@ -31,7 +31,7 @@ const NavBar = () => {
           />
           <li>À propos</li>
         </Link>
-        <Link to="/">
+        <Link to="/projects">
           <img
             src={location.pathname === "/projects" ? projectBlue : projectBlack}
             className="navbarIcon"

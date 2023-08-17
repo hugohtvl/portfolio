@@ -4,13 +4,35 @@ import "./App.scss";
 import Context from "./components/Context";
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Projects from "./pages/Projects";
+import projectsList from "./assets/projects.json";
 
 const App = () => {
   const [proExp, setProExp] = useState(false);
   const [education, setEducation] = useState(false);
+  const [skills, setSkills] = useState(false);
+  const [projects, setProjects] = useState(projectsList);
   const contextValues = useMemo(
-    () => ({ proExp, setProExp, education, setEducation }),
-    [proExp, setProExp, education, setEducation]
+    () => ({
+      proExp,
+      setProExp,
+      education,
+      setEducation,
+      skills,
+      setSkills,
+      projects,
+      setProjects,
+    }),
+    [
+      proExp,
+      setProExp,
+      education,
+      setEducation,
+      skills,
+      setSkills,
+      projects,
+      setProjects,
+    ]
   );
   return (
     <Context.Provider value={contextValues}>
@@ -19,6 +41,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
           </Routes>
         </div>
       </Router>

@@ -6,14 +6,19 @@ import mySelf from "../assets/me.png";
 import AboutCards from "../components/AboutCards";
 import ExperiencesCards from "../components/ExperiencesCards";
 import EducationCards from "../components/EducationCards";
+import SkillsCards from "../components/SkillsCards";
 
 const About = () => {
-  const { proExp, setProExp, education, setEducation } = useContext(Context);
+  const { proExp, setProExp, education, setEducation, skills, setSkills } =
+    useContext(Context);
   const handleClickProExp = () => {
     setProExp(!proExp);
   };
   const handleClickEducation = () => {
     setEducation(!education);
+  };
+  const handleClickSkills = () => {
+    setSkills(!skills);
   };
 
   return (
@@ -38,10 +43,13 @@ const About = () => {
           <ExperiencesCards handleClickProExp={handleClickProExp} />
         ) : education ? (
           <EducationCards handleClickEducation={handleClickEducation} />
+        ) : skills ? (
+          <SkillsCards handleClickSkills={handleClickSkills} />
         ) : (
           <AboutCards
             handleClickProExp={handleClickProExp}
             handleClickEducation={handleClickEducation}
+            handleClickSkills={handleClickSkills}
           />
         )}
         <Footer />
