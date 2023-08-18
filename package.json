@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
-    "sass": "^1.65.1"
+    "sass": "^1.65.1",
+    "sweetalert2": "^11.7.23"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
