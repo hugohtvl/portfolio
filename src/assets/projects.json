@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "logo": "src/assets/o-sook-logo.png",
+    "logo": "https://www.hugo-hattenville.fr/src/assets/o-sook-logo.png",
     "title": "O'Sook",
     "description": "Création d'une application web, pensée mobile first, de type annonces entre particulier au temps de l’Égypte Antique, avec des objets en vente datant de cette période. L'ensemble des photos ont été générées sur Midjourney. L'application a été développée en 24h avec React.Js (via l'environnement ViteJS), JavaScript ainsi que Sass pour la partie front-end, le back-end quant à lui a été réalisé avec Express.js et Node.js pour la conception d'une API Rest maison.",
     "skills": "React.js · Express.js · Node.js · JavaScript · Sass · Git · GitHub"
