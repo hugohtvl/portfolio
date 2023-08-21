@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import NavBar from "../components/NavBar";
 import Footer from "../components/Footer";
 import linkedinLogo from "../assets/linkedin.png";
+import gitHubLogo from "../assets/github.png";
 import mailLogoBlack from "../assets/envelope-black.png";
 import sendLogo from "../assets/send-logo.png";
 // import mailLogoBlue from "../assets/envelope-blue.png";
@@ -69,7 +70,11 @@ const Contact = () => {
               href="https://www.linkedin.com/in/hugohattenville/"
               target="_blank"
             >
-              Hugo Hattenville
+              Profil LinkedIn
+            </a>
+            <img src={gitHubLogo} alt="Logo du site internet GitHub" />
+            <a href="https://github.com/hugohtvl" target="_blank">
+              Profil GitHub
             </a>
           </div>
         </div>

@@ -5,7 +5,7 @@ import Context from "./components/Context";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
-import projectsList from "./assets/projects.json";
+import projectsList from "./assets/ProjectsList.jsx";
 import Contact from "./pages/Contact";
 
 const App = () => {
