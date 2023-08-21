@@ -11,7 +11,10 @@ const Projects = () => {
       <div id="projectsList">
         {projects.map((project) => (
           <div className="projectsCard" key={project.id}>
-            <img src={project.logo} alt={`Logo du projet ${project.title}`} />
+            <img
+              src={`https://www.hugo-hattenville.fr/${projects.logo}`}
+              alt={`Logo du projet ${project.title}`}
+            />
             <div className="projectsContentCards">
               <h2>{project.title}</h2>
               <br />
