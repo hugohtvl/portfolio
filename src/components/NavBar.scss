@@ -1,0 +1,50 @@
+.NavBarGlobal {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  margin: 0 5px 0 5px;
+  padding: 10px 0 0 0;
+  background-image: none;
+
+  .NavBarHugo {
+    font-size: 50px;
+    font-family: $main-title;
+    padding: 0 0 0 20px;
+
+    a {
+      color: black;
+      text-decoration: none; // Supprime le soulignement du lien
+    }
+  }
+
+  .NavBarButtons {
+    display: flex;
+    padding: 0 20px 0 0;
+    font-family: $content-font;
+    list-style-type: none;
+    font-size: 25px;
+    // centre les boutons verticalement sur "Hugo Hattenville"
+    transform: translateY(25%);
+
+    li {
+      // padding: 0 0 0 20px;
+      color: black;
+      text-decoration: none; // Supprime le soulignement du lien
+    }
+
+    a {
+      text-decoration: none;
+      display: flex;
+
+      :hover {
+        color: #e1af50;
+      }
+    }
+    .navbarIcon {
+      height: 20px;
+      transform: translateY(25%);
+      padding: 0 15px 0 70px;
+      color: blue;
+    }
+  }
+}
