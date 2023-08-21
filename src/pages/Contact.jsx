@@ -53,10 +53,6 @@ const Contact = () => {
     } else {
       setSwitchButton("un Professionnel");
     }
-    console.info(switchButton);
-    console.log("Service ID:", serviceid);
-    console.log("Template ID:", templateid);
-    console.log("Public Key:", publicKey);
   };
 
   return (
