@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import projectsList from "./assets/projects.json";
+import Contact from "./pages/Contact";
 
 const App = () => {
   const [proExp, setProExp] = useState(false);
@@ -42,6 +43,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
       </Router>
