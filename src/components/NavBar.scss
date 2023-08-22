@@ -1,50 +1,230 @@
+// .NavBarGlobal {
+//   display: flex;
+//   text-align: center;
+//   justify-content: space-between;
+//   margin: 0 5px 0 5px;
+//   padding: 10px 0 0 0;
+//   background-image: none;
+
+//   .NavBarHugo {
+//     font-size: 50px;
+//     font-family: $main-title;
+//     padding: 0 0 0 20px;
+
+//     a {
+//       color: black;
+//       text-decoration: none; // Supprime le soulignement du lien
+//     }
+//   }
+
+//   .NavBarButtons {
+//     display: flex;
+//     padding: 0 20px 0 0;
+//     font-family: $content-font;
+//     list-style-type: none;
+//     font-size: 25px;
+//     // centre les boutons verticalement sur "Hugo Hattenville"
+//     transform: translateY(25%);
+
+//     li {
+//       // padding: 0 0 0 20px;
+//       color: black;
+//       text-decoration: none; // Supprime le soulignement du lien
+//     }
+
+//     a {
+//       text-decoration: none;
+//       display: flex;
+
+//       :hover {
+//         color: #e1af50;
+//       }
+//     }
+//     .navbarIcon {
+//       height: 20px;
+//       transform: translateY(25%);
+//       padding: 0 15px 0 70px;
+//       color: blue;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 780px) {
+//   .NavBarGlobal {
+//     .NavBarHugo {
+//       font-size: 30px;
+//     }
+//   }
+//   #deloreanTitle {
+//     flex-direction: column-reverse;
+//   }
+// }
+
 .NavBarGlobal {
   display: flex;
-  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: space-between;
-  margin: 0 5px 0 5px;
-  padding: 10px 0 0 0;
-  background-image: none;
+  font-family: $content-font;
+  width: 100%;
+  min-height: 75px;
+  font-size: 1.5rem;
+  padding: 1rem;
+  img {
+    padding: 0 8px 0 0;
+  }
 
   .NavBarHugo {
-    font-size: 50px;
-    font-family: $main-title;
-    padding: 0 0 0 20px;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     a {
       color: black;
-      text-decoration: none; // Supprime le soulignement du lien
+      font-family: $main-title;
+      font-size: 45px;
+      // font-size: 1.5rem;
+      padding: 10px;
+      transition: ease-in-out 0.2s;
     }
   }
 
   .NavBarButtons {
     display: flex;
-    padding: 0 20px 0 0;
-    font-family: $content-font;
-    list-style-type: none;
-    font-size: 25px;
-    // centre les boutons verticalement sur "Hugo Hattenville"
-    transform: translateY(25%);
-
-    li {
-      // padding: 0 0 0 20px;
-      color: black;
-      text-decoration: none; // Supprime le soulignement du lien
+    gap: 10px;
+  }
+  .NavBarLink {
+    padding: 0 0.3rem;
+    color: inherit;
+    transition: ease-in-out 0.2s;
+    &:hover {
+      color: #e1af50;
+      cursor: pointer;
+      transition: ease-in-out 0.2s;
     }
+  }
 
-    a {
-      text-decoration: none;
-      display: flex;
+  .NavBarBurger {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    color: inherit;
+    display: none;
+  }
+}
 
-      :hover {
-        color: #e1af50;
+@media screen and (max-width: 780px) {
+  .NavBarGlobal {
+    background: transparent;
+    border: none;
+  }
+
+  .navHide {
+    background: transparent;
+    border: none;
+  }
+  .NavBarButtons {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: fixed;
+    right: -100vw;
+    margin-right: 10px;
+    top: 20px;
+    width: 0;
+    height: auto;
+    padding: 2rem;
+    background-color: rgba(225, 174, 80);
+    border-radius: 10px;
+    visibility: hidden;
+    transition: all 0.8s ease-out;
+    .NavBarLink {
+      display: block;
+      padding: 5px;
+      font-size: 3vw;
+      &:hover {
+        color: initial;
+        cursor: pointer;
+        transition: ease-in-out 0.2s;
       }
     }
-    .navbarIcon {
-      height: 20px;
-      transform: translateY(25%);
-      padding: 0 15px 0 70px;
-      color: blue;
+  }
+  .navShow .NavBarButtons {
+    width: 60%;
+    right: 0;
+    visibility: visible;
+  }
+  .NavBarItem::after {
+    // content: "";
+    display: block;
+    margin: 0 auto;
+    width: 3vw;
+    height: 1px;
+    background: #fff;
+  }
+  .NavBarItem:last-child::after {
+    display: none;
+  }
+  .NavBarBurger {
+    display: block !important;
+    position: fixed;
+    top: 2rem;
+    right: 1rem;
+    &:hover {
+      cursor: pointer;
     }
+  }
+  .burgerBars,
+  .burgerBars::before,
+  .burgerBars::after {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: relative;
+    border-radius: 3px;
+    background: black;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .burgerBars::before,
+  .burgerBars::after {
+    content: "";
+    position: absolute;
+    left: 0;
+  }
+  .burgerBars::before {
+    transform: translateY(-12px);
+  }
+  .burgerBars::after {
+    transform: translateY(12px);
+  }
+  .navShow .burgerBars {
+    width: 0;
+    background: transparent;
+  }
+  .navShow .burgerBars::before {
+    transform: rotate(45deg);
+  }
+  .navShow .burgerBars::after {
+    transform: rotate(-45deg);
+  }
+  .NavBarItem {
+    transform: translateX(100vh);
+  }
+  .navShow .NavBarItem {
+    transform: translateX(0);
+  }
+  .navShow .slideInDown-1 {
+    transition: all 0.1s ease-out;
+  }
+  .navShow .slideInDown-2 {
+    transition: all 0.3s ease-out;
+  }
+  .navShow .slideInDown-3 {
+    transition: all 0.3s ease-out;
+  }
+  .navShow .slideInDown-4 {
+    transition: all 0.4s ease-out;
   }
 }

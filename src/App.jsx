@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useMemo } from "react";
 import "./App.scss";
 import Context from "./components/Context";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -39,12 +41,18 @@ const App = () => {
     <Context.Provider value={contextValues}>
       <Router>
         <div id="appContainer">
+          <div id="navbarApp">
+            <NavBar />
+          </div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <div id="footerApp">
+            <Footer />
+          </div>
         </div>
       </Router>
     </Context.Provider>

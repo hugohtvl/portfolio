@@ -57,7 +57,6 @@ const Contact = () => {
 
   return (
     <main id="contactGlobal">
-      <NavBar />
       <section id="globalCards">
         <div className="contactCards">
           <div className="infoContactCards">
@@ -203,14 +202,10 @@ const Contact = () => {
                 <img src={sendLogo} />
                 <label htmlFor="send">Envoyer</label>
               </button>
-              <p>
-                Le message met 6 secondes à s'envoyer, un peu de patience...
-              </p>
             </div>
           </form>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

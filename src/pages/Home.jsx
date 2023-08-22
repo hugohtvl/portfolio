@@ -6,15 +6,16 @@ const Home = () => {
   return (
     <>
       <main id="homeGlobal">
-        <NavBar />
         <div id="deloreanTitle">
           <img src={delorean} alt="DeLorean" />
           <div id="titleAlone">
-            <h1>Développeur</h1>
-            <p>Full Stack</p>
+            <h1>
+              Développeur
+              <br />
+              <span id="homeTitle">Full Stack</span>
+            </h1>
           </div>
         </div>
-        <Footer />
       </main>
     </>
   );

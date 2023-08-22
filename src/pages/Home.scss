@@ -2,21 +2,59 @@
   // background-image: url("./assets/background.svg");
   // background-repeat: no-repeat;
   // // height: calc(100vh - 6.74vh);
-  position: relative;
-  min-height: 100vh;
-  width: 100vw;
+  width: 100%;
 
   #deloreanTitle {
     display: flex;
+
     margin: 5% 0 0 0;
-    h1 {
-      font-family: $content-font;
-      font-size: 90px;
+    #titleAlone {
+      display: flex;
+      justify-content: center;
+      text-align: start;
+      width: 100%;
+      height: auto;
+      h1 {
+        font-family: $content-font;
+        font-size: 5vw;
+      }
+
+      #homeTitle {
+        font-family: $second-title;
+        font-weight: 400;
+        font-size: 5vw;
+      }
     }
 
-    p {
-      font-family: $second-title;
-      font-size: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #homeGlobal {
+    // margin: 45% 0 0 0;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+
+    #deloreanTitle {
+      flex-direction: column-reverse;
+      justify-content: center;
+      #titleAlone {
+        h1 {
+          font-size: 10vw;
+        }
+
+        #homeTitle {
+          font-size: 10vw;
+        }
+      }
     }
   }
 }

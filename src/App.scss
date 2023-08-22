@@ -1,9 +1,32 @@
-#appContainer {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  list-style-type: none;
+  text-decoration: none;
+  // border: 2px solid red;
+}
+body {
   background-image: url("./assets/background.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  // background-size: auto;
-  // height: calc(100vh - 6.74vh);
-  // height: 100vh;
-  // width: 100vw;
+  background-size: cover;
+}
+#appContainer {
+  width: 100%;
+  // #navbarApp {
+  //   position: absolute;
+  // }
+  #footerApp {
+    width: 100%;
+    // position: absolute;
+    bottom: 0;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  #footerApp {
+    position: absolute;
+  }
 }
