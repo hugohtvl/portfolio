@@ -24,7 +24,6 @@ const About = () => {
   return (
     <>
       <div id="aboutGlobal">
-        <NavBar />
         <section id="aboutPresentation">
           <img src={mySelf} alt="Photo de Hugo Hattenville" id="aboutPicture" />
           <div id="aboutText">
@@ -52,7 +51,6 @@ const About = () => {
             handleClickSkills={handleClickSkills}
           />
         )}
-        <Footer />
       </div>
     </>
   );

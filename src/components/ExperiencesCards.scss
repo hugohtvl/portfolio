@@ -6,6 +6,7 @@
     #titleCross {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       button {
         cursor: pointer;
       }
@@ -14,8 +15,8 @@
       display: flex;
       justify-content: center;
     }
-    width: 95vw;
-    height: 52vh;
+    width: 95%;
+    height: 100%;
     background-color: #ffffff;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -24,7 +25,7 @@
       font-family: $content-font;
       font-weight: 400;
       color: $content-font-color;
-      margin: 10px 0 0 15px;
+      margin: 10px 0 10px 15px;
       font-size: 24px;
     }
     h2 {
@@ -46,12 +47,12 @@
     #experienceCardAlone {
       border: 2px solid #f3dfb9;
       border-radius: 15px;
-      width: 28vw;
+      width: 30%;
       height: 42vh;
       margin: 5px 0 0 20px;
       li {
         font-family: $content-font;
-        padding: 0 10px 0 0;
+        padding: 0 10px 0 10px;
       }
     }
     .numberExperienceCard {
@@ -68,6 +69,41 @@
         width: 28vw;
         margin: 5px 0 20px 20px;
         padding: 0 0 5px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #experienceCardslGlobal {
+    margin: 20px 0 0 0;
+    #experienceCards {
+      #titleCross {
+        align-items: center;
+        h1 {
+          font-size: 20px;
+        }
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+      #experienceList {
+        flex-direction: column;
+      }
+      #experienceCardAlone {
+        width: 90%;
+        height: 100%;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      .experienceCardGroup {
+        .experienceCardsTogether {
+          width: 90%;
+          height: 100%;
+          padding-bottom: 10px;
+          margin-bottom: 15px;
+        }
       }
     }
   }

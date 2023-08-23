@@ -36,28 +36,6 @@ const EducationCards = ({ handleClickEducation }) => {
             </div>
             <div className="educationCardsTogether">
               <img
-                src={nbBackground3}
-                className="numberEducationCard"
-                alt="Image d'une pastille avec le chiffre 3"
-              />
-              <div id="textEducationCard">
-                <h2>Licence - E-commerce et marketing numérique</h2>
-                <p>
-                  IUT de Belfort-Montbéliard, <i>Belfort, France</i> - 09/2014 –
-                  06/2015
-                </p>
-                <br />
-                <p>
-                  C'est au cours de cette Licence que j'ai pu lier mon goût pour
-                  le commerce et celui pour le numérique. C'est d'ailleurs là
-                  que j'ai découvert les bases de données relationnelles !
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="educationCardGroup">
-            <div className="educationCardsTogether">
-              <img
                 src={nbBackground2}
                 className="numberEducationCard"
                 alt="Image d'une pastille avec le chiffre 2"
@@ -74,6 +52,28 @@ const EducationCards = ({ handleClickEducation }) => {
                   Ce Mastère m'a permis d'acquérir de nombreuses compétences
                   dans le numérique, du marketing jusqu'au développement web en
                   passant par la data !
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="educationCardGroup">
+            <div className="educationCardsTogether">
+              <img
+                src={nbBackground3}
+                className="numberEducationCard"
+                alt="Image d'une pastille avec le chiffre 3"
+              />
+              <div id="textEducationCard">
+                <h2>Licence - E-commerce et marketing numérique</h2>
+                <p>
+                  IUT de Belfort-Montbéliard, <i>Belfort, France</i> - 09/2014 –
+                  06/2015
+                </p>
+                <br />
+                <p>
+                  C'est au cours de cette Licence que j'ai pu lier mon goût pour
+                  le commerce et celui pour le numérique. C'est d'ailleurs là
+                  que j'ai découvert les bases de données relationnelles !
                 </p>
               </div>
             </div>

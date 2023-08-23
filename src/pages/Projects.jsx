@@ -7,7 +7,6 @@ const Projects = () => {
   const { projects } = useContext(Context);
   return (
     <main id="projectsGlobal">
-      <NavBar />
       <div id="projectsList">
         {projects.map((project) => (
           <div className="projectsCard" key={project.id}>
@@ -26,7 +25,6 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <Footer />
     </main>
   );
 };

@@ -1,9 +1,11 @@
-#footerAlone {
-  position: absolute;
-  bottom: 0;
-  padding: 0 0 10px 0;
-  width: 100vw;
-  text-align: center;
-  font-family: $content-font;
-  font-size: 18px;
+#footerContainer {
+  display: flex;
+  justify-content: center;
+  #footerAlone {
+    padding: 10px 0 10px 0;
+    width: 100%;
+    text-align: center;
+    font-family: $content-font;
+    font-size: 18px;
+  }
 }

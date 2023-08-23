@@ -57,7 +57,6 @@ const Contact = () => {
 
   return (
     <main id="contactGlobal">
-      <NavBar />
       <section id="globalCards">
         <div className="contactCards">
           <div className="infoContactCards">
@@ -66,11 +65,11 @@ const Contact = () => {
               href="https://www.linkedin.com/in/hugohattenville/"
               target="_blank"
             >
-              Profil LinkedIn
+              <span>Profil</span> LinkedIn
             </a>
             <img src={gitHubLogo} alt="Logo du site internet GitHub" />
             <a href="https://github.com/hugohtvl" target="_blank">
-              Profil GitHub
+              <span>Profil</span> GitHub
             </a>
           </div>
         </div>
@@ -102,20 +101,22 @@ const Contact = () => {
                 <p>
                   <i>Vous êtes :</i>
                 </p>
-                <p>
-                  <b>un Professionnel</b>
-                </p>
-                <label className="switch">
-                  <input
-                    type="checkbox"
-                    onClick={handleChange}
-                    name={switchButton}
-                  />
-                  <span className="slider round"></span>
-                </label>
-                <p>
-                  <b>un Particulier</b>
-                </p>
+                <div id="proAndPart">
+                  <p>
+                    <b>un Professionnel</b>
+                  </p>
+                  <label className="switch">
+                    <input
+                      type="checkbox"
+                      onClick={handleChange}
+                      name={switchButton}
+                    />
+                    <span className="slider round"></span>
+                  </label>
+                  <p>
+                    <b>un Particulier</b>
+                  </p>
+                </div>
               </div>
             </div>
             <div id={switchButton === "un Professionnel" ? "inputGroup" : ""}>
@@ -203,14 +204,10 @@ const Contact = () => {
                 <img src={sendLogo} />
                 <label htmlFor="send">Envoyer</label>
               </button>
-              <p>
-                Le message met 6 secondes à s'envoyer, un peu de patience...
-              </p>
             </div>
           </form>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };
