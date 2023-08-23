@@ -135,7 +135,8 @@
     width: 0;
     height: auto;
     padding: 2rem;
-    background-color: rgba(225, 174, 80);
+    background-color: #fff;
+    border: 3px solid #e1af50;
     border-radius: 10px;
     visibility: hidden;
     transition: all 0.8s ease-out;
@@ -143,6 +144,7 @@
       display: block;
       padding: 5px;
       font-size: 3vw;
+      border-bottom: 2px solid #e1af50;
       &:hover {
         color: initial;
         cursor: pointer;

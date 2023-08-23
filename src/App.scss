@@ -15,18 +15,5 @@ body {
 }
 #appContainer {
   width: 100%;
-  // #navbarApp {
-  //   position: absolute;
-  // }
-  #footerApp {
-    width: 100%;
-    // position: absolute;
-    bottom: 0;
-  }
-}
-
-@media screen and (min-width: 951px) {
-  #footerApp {
-    position: absolute;
-  }
+  min-height: calc(100vh - 42px);
 }

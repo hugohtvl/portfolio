@@ -50,10 +50,8 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-          <div id="footerApp">
-            <Footer />
-          </div>
         </div>
+        <Footer />
       </Router>
     </Context.Provider>
   );

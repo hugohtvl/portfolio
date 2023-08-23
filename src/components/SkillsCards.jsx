@@ -15,28 +15,28 @@ const SkillsCards = ({ handleClickSkills }) => {
           </button>
         </div>
         <section id="skillsList">
-          <div className="skillsCards">
+          <div className="skillsCardAlone">
             <div id="textSkillsCard">
               <h2>Langages et framework</h2>
               <br />
               <p>React.Js, Node.js, JavaScript, HTML5, CSS3</p>
             </div>
           </div>
-          <div className="skillsCards">
+          <div className="skillsCardAlone">
             <div id="textSkillsCard">
               <h2>Logiciels et outils</h2>
               <br />
               <p>Visual Studio Code, Git, GitHub, Figma</p>
             </div>
           </div>
-          <div className="skillsCards">
+          <div className="skillsCardAlone">
             <div id="textSkillsCard">
               <h2>Qualités personnelles</h2>
               <br />
               <p>Agile, Curieux, Impliqué, Rigoureux</p>
             </div>
           </div>
-          <div className="skillsCards">
+          <div className="skillsCardAlone">
             <div id="textSkillsCard">
               <h2>Langues</h2>
               <br />
