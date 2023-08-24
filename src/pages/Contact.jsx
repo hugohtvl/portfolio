@@ -127,9 +127,7 @@ const Contact = () => {
                     : "inputAlone"
                 }
               >
-                <label htmlFor="name">
-                  <i>Prénom & Nom :</i>
-                </label>
+                <label htmlFor="name">Prénom & Nom :</label>
                 <input
                   type="text"
                   id="inputName"
@@ -141,9 +139,7 @@ const Contact = () => {
               </div>
               {switchButton === "un Professionnel" ? (
                 <div className="inputDouble">
-                  <label htmlFor="company">
-                    <i>Nom de l'entreprise :</i>
-                  </label>
+                  <label htmlFor="company">Nom de l'entreprise :</label>
                   <input
                     type="text"
                     id="inputCompany"
@@ -159,9 +155,7 @@ const Contact = () => {
             </div>
             <div id="inputGroup">
               <div className="inputDouble">
-                <label htmlFor="email">
-                  <i>Adresse e-mail :</i>
-                </label>
+                <label htmlFor="email">Adresse e-mail :</label>
                 <input
                   type="email"
                   id="inputMail"
@@ -173,9 +167,7 @@ const Contact = () => {
                 />
               </div>
               <div className="inputDouble">
-                <label htmlFor="phone">
-                  <i>Téléphone :</i>
-                </label>
+                <label htmlFor="phone">Téléphone :</label>
                 <input
                   type="tel"
                   id="inputPhone"
@@ -188,9 +180,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="inputAlone">
-              <label htmlFor="message">
-                <i>Message :</i>
-              </label>
+              <label htmlFor="message">Message :</label>
               <textarea
                 type="textarea"
                 id="inputMessage"

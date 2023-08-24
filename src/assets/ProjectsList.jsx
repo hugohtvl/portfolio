@@ -9,7 +9,7 @@ const ProjectsList = [
     logo: oSookLogo,
     title: "O'Sook",
     description:
-      "Création d'une application web, pensée mobile first, de type annonces entre particulier au temps de l’Égypte Antique, avec des objets en vente datant de cette période. L'ensemble des photos ont été générées sur Midjourney. L'application a été développée en 24h avec React.Js (via l'environnement ViteJS), JavaScript ainsi que Sass pour la partie front-end, le back-end quant à lui a été réalisé avec Express.js et Node.js pour la conception d'une API Rest maison.",
+      "Création d'une application web, pensée mobile first, de type annonces entre particulier au temps de l’Égypte Antique, avec des objets en vente datant de cette période. L'ensemble des photos a été généré sur Midjourney. L'application a été développée en 24h avec React.Js (via l'environnement ViteJS), JavaScript ainsi que Sass pour la partie front-end, le back-end quant à lui a été réalisé avec Express.js et Node.js pour la conception d'une API Rest maison.",
     skills:
       "React.js · Express.js · Node.js · JavaScript · Sass · Git · GitHub",
   },
@@ -18,7 +18,7 @@ const ProjectsList = [
     logo: dreamITLogo,
     title: "DreamIT",
     description:
-      "Création d'une application web e-commerce imaginaire où le but est de pouvoir acheter des rêves pré-fabriqués, ou bien de concevoir son propre rêve à la carte, à consommer sous forme de gélule. L'ensemble des images ont été générées sur DALL-E. L'application a été développée avec React.Js (via l'environnement ViteJS), JavaScript ainsi que Sass pour la partie front-end, le back-end quant à lui a été réalisé avec Express.js et Node.js pour la conception d'une API Rest maison.",
+      "Création d'une application web e-commerce imaginaire où le but est de pouvoir acheter des rêves pré-fabriqués, ou bien de concevoir son propre rêve à la carte, à consommer sous forme de gélule. L'ensemble des images a été généré sur DALL-E. L'application a été développée avec React.Js (via l'environnement ViteJS), JavaScript ainsi que Sass pour la partie front-end, le back-end quant à lui a été réalisé avec Express.js et Node.js pour la conception d'une API Rest maison.",
     skills:
       "React.js · Express.js · Node.js · JavaScript · Sass · Git · GitHub",
   },
