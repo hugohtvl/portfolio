@@ -1,5 +1,5 @@
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+// import NavBar from "../components/NavBar";
+// import Footer from "../components/Footer";
 import delorean from "../assets/delorean.png";
 
 const Home = () => {
@@ -7,7 +7,9 @@ const Home = () => {
     <>
       <main id="homeGlobal">
         <div id="deloreanTitle">
-          <img src={delorean} alt="DeLorean" />
+          <div id="deloreanImg">
+            <img src={delorean} alt="DeLorean" />
+          </div>
           <div id="titleAlone">
             <h1>
               Développeur

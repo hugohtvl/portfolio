@@ -8,7 +8,7 @@
   img {
     aspect-ratio: 1/1;
     object-fit: contain;
-    height: 75%;
+    height: 50%;
     padding: 0 10px 0 10px;
   }
   .aboutCards {
@@ -22,8 +22,10 @@
     border-radius: 15px;
     border: none;
     .aboutTitleImg {
-      text-align: center;
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
     }
     h2 {
       padding: 10px 10px 15px 10px;
@@ -31,7 +33,6 @@
       font-family: $content-font;
       font-weight: 200;
       font-size: 24px;
-      //   width: 50%;
     }
   }
 }
@@ -43,7 +44,6 @@
     img {
       aspect-ratio: 1/1;
       object-fit: contain;
-      height: 190px;
     }
     .aboutCards {
       width: 325px;

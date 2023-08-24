@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Context from "../components/Context";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+// import NavBar from "../components/NavBar";
+// import Footer from "../components/Footer";
 
 const Projects = () => {
   const { projects } = useContext(Context);

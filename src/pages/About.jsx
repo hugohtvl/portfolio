@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import Context from "../components/Context";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+// import NavBar from "../components/NavBar";
+// import Footer from "../components/Footer";
 import mySelf from "../assets/me.png";
 import AboutCards from "../components/AboutCards";
 import ExperiencesCards from "../components/ExperiencesCards";
