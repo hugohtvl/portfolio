@@ -1,8 +1,8 @@
 import { useState, useRef } from "react";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+// import NavBar from "../components/NavBar";
+// import Footer from "../components/Footer";
 import linkedinLogo from "../assets/linkedin.png";
 import gitHubLogo from "../assets/github.png";
 import mailLogoBlack from "../assets/envelope-black.png";
