@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import crossButton from "../assets/cross-button.png";
 import nbBackground1 from "../assets/number-background-1.png";
 import nbBackground2 from "../assets/number-background-2.png";
@@ -9,7 +11,7 @@ const EducationCards = ({ handleClickEducation }) => {
     <main id="educationCardslGlobal">
       <div id="educationCards">
         <div id="titleCross">
-          <h1>Formation</h1>
+          <h1>Formations</h1>
           <button id="carrouselCross" onClick={handleClickEducation}>
             <img src={crossButton} />
           </button>
@@ -30,7 +32,10 @@ const EducationCards = ({ handleClickEducation }) => {
                 <br />
                 <p>
                   Apprentissage intensif de langages front-end et back-end dont
-                  notamment React.Js, Node.js, JavaScript, mySQL, HTML, CSS
+                  notamment React.Js, Node.js, JavaScript, mySQL, HTML & CSS.
+                  J'ai eu l'occasion de travailler sur un certain nombre de{" "}
+                  <Link to="/projects">projets</Link> et je me forme à côté sur
+                  PHP et Python.
                 </p>
               </div>
             </div>
