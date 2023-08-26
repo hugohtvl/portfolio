@@ -1,54 +1,61 @@
 #aboutSectionCards {
-  padding: 50px 0 0 0;
   display: flex;
-  justify-content: space-evenly;
-  button {
-    cursor: pointer;
-  }
-  img {
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    height: 50%;
-    padding: 0 10px 0 10px;
-  }
-  .aboutCards {
+  justify-content: center;
+  #allAboutCards {
     display: flex;
-    // align-items: center;
-    justify-content: center;
-    // height: 50%;
-    width: 31%;
-    background: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-    border: none;
-    .aboutTitleImg {
+    width: 95%;
+    gap: 60px;
+    .aboutCard {
+      cursor: pointer;
       display: flex;
-      flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
-    }
-    h2 {
-      padding: 10px 10px 15px 10px;
-      color: $content-font-color;
-      font-family: $content-font;
-      font-weight: 200;
-      font-size: 24px;
+      justify-content: center;
+      width: 100%;
+      height: 350px;
+      background: #ffffff;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      border: none;
+      .aboutTitleImg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        #aboutCardsPicture {
+          aspect-ratio: 1/1;
+          object-fit: contain;
+          width: 100%;
+          height: 50%;
+        }
+      }
+      h2 {
+        padding: 10px 10px 15px 10px;
+        color: $primary-color;
+        font-family: $content-font;
+        font-weight: 200;
+        font-size: 24px;
+      }
     }
   }
 }
 
 @media screen and (max-width: 950px) {
   #aboutSectionCards {
-    flex-direction: column;
-    align-items: center;
-    img {
-      aspect-ratio: 1/1;
-      object-fit: contain;
-    }
-    .aboutCards {
-      width: 325px;
-      margin: 0 0 30px 0;
-      padding: 0 0 20px 0;
+    #allAboutCards {
+      margin: 30px 0 0 0;
+      width: 90%;
+      gap: 30px;
+      flex-direction: column;
+      align-items: center;
+      img {
+        aspect-ratio: 1/1;
+        object-fit: contain;
+      }
+      .aboutCards {
+        padding: 0 0 20px 0;
+      }
     }
   }
 }

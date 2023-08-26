@@ -93,8 +93,10 @@ const Contact = () => {
             name="contactForm"
           >
             <div className="formContactCard">
-              <img src={mailLogoBlack} alt="Logo d'une enveloppe" />
-              <h2>Message</h2>
+              <div id="titleMessage">
+                <img src={mailLogoBlack} alt="Logo d'une enveloppe" />
+                <h2>Message</h2>
+              </div>
             </div>
             <div className="formContactCard">
               <div id="switchButton">
@@ -179,15 +181,17 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="inputAlone">
-              <label htmlFor="message">Message :</label>
-              <textarea
-                type="textarea"
-                id="inputMessage"
-                name="message"
-                required
-                maxLength="800"
-              />
+            <div className="inputAloneDiv">
+              <div className="inputAlone">
+                <label htmlFor="message">Message :</label>
+                <textarea
+                  type="textarea"
+                  id="inputMessage"
+                  name="message"
+                  required
+                  maxLength="800"
+                />
+              </div>
             </div>
             <div id="buttonSubmit">
               <button type="submit">

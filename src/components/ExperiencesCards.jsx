@@ -73,7 +73,8 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                 </p>
                 <br />
                 <p>
-                  Accompagnement d'étudiants dans le passage de leurs diplômes
+                  Accompagnement d'étudiants chaque semaine dans la validation
+                  de leurs projets et le passage de leurs diplômes.
                 </p>
               </container>
             </div>
@@ -89,7 +90,11 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                   Konverseo - 08/2022 à 03/2023 - <i>Tours, France</i>
                 </p>
                 <br />
-                <p>Développement et fidélisation du portefeuille clients</p>
+                <p>
+                  Konverseo commercialise des sites internet clés en main à
+                  destination des TPE & PME, je formais également les chefs
+                  d'entreprise à l'usage de leurs back-office.
+                </p>
               </container>
             </div>
             <div className="experienceCardsTogether">
@@ -104,7 +109,12 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                   Sortvoices - 09/2017 à 12/2021 - <i>Bordeaux, France</i>
                 </p>
                 <br />
-                <p>Développement et fidélisation du portefeuille clients</p>
+                <p>
+                  Sortvoices était un SaaS d'analyse du langage textuel, à
+                  destination des e-commerçants pour leurs avis clients ou de
+                  toute entreprise ayant des verbatims pour lesquelles extraire
+                  des tendances.
+                </p>
               </container>
             </div>
           </div>
@@ -122,8 +132,8 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                 </p>
                 <br />
                 <p>
-                  Développement de la notoriété via SEO, AdWords, Facebook Ads,
-                  mailing
+                  Développement de la notoriété et du référencement via SEO,
+                  AdWords, Facebook Ads, mailing.
                 </p>
               </container>
             </div>
@@ -140,8 +150,8 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                 </p>
                 <br />
                 <p>
-                  Conception de cahiers des charges fonctionnels et de maquettes
-                  de sites
+                  Rédaction de cahiers des charges fonctionnels, réalisation de
+                  maquettes de sites via Balsamiq Mockups.
                 </p>
               </container>
             </div>
@@ -157,7 +167,7 @@ const ExperiencesCards = ({ handleClickProExp }) => {
                   Orange France - 07/2011 à 09/2013 - <i>Tours, France</i>
                 </p>
                 <br />
-                <p>Développement et fidélisation du portefeuilles clients</p>
+                <p>Développement et fidélisation du portefeuilles clients.</p>
               </container>
             </div>
           </div>
